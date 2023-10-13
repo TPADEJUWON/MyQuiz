@@ -1,0 +1,57 @@
+/* Body style is only for code pen viewing, do not copy in actual project*/
+
+.field-container {
+  position: relative;
+  border: 2px solid #0c0c0c;
+  height: 50px;
+  width: 320px;
+  padding-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  
+}
+
+
+.field-placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translate(5px, -50%);
+  pointer-events: none;
+  transition: all 0.14s ease-in-out;
+  font-size: 16px;
+  color: black;
+}
+input[type=text].field-input {
+  color: black;
+  border: none;
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 18px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 0px;
+  background-color: transparent;
+}
+input[type=text].field-input:focus {
+  outline: none;
+}
+input[type=text].field-input.c-fix, input[type=text].field-input:focus, input[type=text].field-input:not(:placeholder-shown) {
+  border-color: black;
+}
+input[type=text].field-input.c-fix ~ label, input[type=text].field-input:focus ~ label, input[type=text].field-input:not(:placeholder-shown) ~ label {
+  color: #1a1919;
+  font-size: 11px;
+  top: calc(30% - 0.5rem);
+  transform: translate(5px, 0%);
+}
+input[type=text].field-input::-webkit-input-placeholder {
+  color: transparent;
+}
+input[type=text].field-input::-moz-placeholder {
+  color: transparent;
+}
+input[type=text].field-input:-ms-input-placeholder {
+  color: transparent;
+}
