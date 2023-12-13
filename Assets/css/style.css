@@ -145,6 +145,7 @@ footer{
 @media screen and (max-width:768px) {
     .form{
         width: 100%;
+        
     }
 
     nav{
@@ -160,15 +161,23 @@ footer{
         margin-top: 8px;
     }
     .bold{
-        margin-left: 32%;
+        text-align: center;
+        margin-left: auto;
         margin-right: auto;
         font-size: 1.2rem;
     }
 
     .butttons{
-        margin-left: 32%;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 20px;
         
+    }
+
+    section{
+        width: 100%;
+        padding-left: 20px;
+        padding-right:20px;
     }
     
 }
